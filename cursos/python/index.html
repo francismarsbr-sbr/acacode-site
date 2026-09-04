@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprende a programar con Python | acacode</title>
+    <meta
+      name="description"
+      content="Curso de Python de acacode: de cero a programador. Fundamentos, POO, patrones de diseño y calidad de software. Desde 14 años."
+    />
+    <link rel="icon" href="img/favicon.png?v=1" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=5" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="container header__inner">
+                <a class="brand" href="../../index.html" aria-label="acacode, ir al inicio">
+          <img src="img/logo-acacode-blanco.png?v=2" alt="Logo de acacode" />
+        </a>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="../../index.html">Home</a>
+          <a href="../../cursos.html">Cursos</a>
+          <a href="../../acerca-de-nosotros.html">Acerca de Nosotros</a>
+          <a href="../../index.html#testimonios">Testimonios</a>
+          <a href="#inscripcion">Inscribirse</a>
+          <a href="../../index.html#contacto" class="nav__cta">Contacto</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Academia acacode</p>
+            <h1>
+              Aprende a programar
+              <span>con Python</span>
+            </h1>
+            <p class="hero__lead">
+              De cero a programador. Python es el puente perfecto entre la lógica humana
+              y el poder de las máquinas: una chispa de innovación que transforma a los
+              estudiantes de consumidores de tecnología en creadores y arquitectos de su
+              propio futuro digital.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#inscripcion">Contactar al asesor</a>
+              <a class="btn btn--ghost" href="#temario">Ver temario</a>
+            </div>
+            <ul class="hero__stats">
+              <li>
+                <strong>7</strong>
+                <span>objetivos</span>
+              </li>
+              <li>
+                <strong>2</strong>
+                <span>módulos</span>
+              </li>
+              <li>
+                <strong>14+</strong>
+                <span>años en adelante</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__visual">
+            <img
+              class="hero__photo"
+              src="img/hero-python.png"
+              alt="Curso Python de cero a programador - acacode: el puente entre la lógica humana y el poder de las máquinas"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="method" id="metodologia">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Metodología</p>
+            <h2>De la lógica básica al software profesional</h2>
+            <p>
+              Dos módulos progresivos: primero dominas los fundamentos de Python y la
+              resolución de problemas; luego aplicas POO, patrones de diseño y buenas
+              prácticas para construir software robusto y escalable.
+            </p>
+          </div>
+          <div class="method__grid">
+            <article class="station-card station-card--lab">
+              <span class="station-card__tag">Módulo I</span>
+              <h3>Fundamentos y lógica con Python</h3>
+              <p>
+                Variables, tipos de datos, operadores, control de flujo, estructuras de
+                datos, funciones, manejo de errores y trabajo con archivos y librerías.
+              </p>
+              <ul>
+                <li>Algoritmos y resolución de problemas</li>
+                <li>REPL, scripts .py y f-strings</li>
+                <li>Listas, diccionarios, try/except y pip</li>
+              </ul>
+            </article>
+            <article class="station-card station-card--maker">
+              <span class="station-card__tag">Módulo II</span>
+              <h3>Arquitectura y calidad de software</h3>
+              <p>
+                POO, patrones de diseño (Singleton, Strategy, Observer, Factory),
+                concurrencia, testing con PyTest y persistencia con bases de datos.
+              </p>
+              <ul>
+                <li>Entornos virtuales y type hinting</li>
+                <li>Multithreading y decoradores @benchmark</li>
+                <li>Unit testing con mocks e integración con BD</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs" id="temario">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Temario completo</p>
+            <h2>7 objetivos · Python de cero a programador</h2>
+            <p>
+              Un recorrido estructurado desde los primeros pasos en programación hasta
+              la construcción de aplicaciones profesionales con patrones y pruebas.
+            </p>
+          </div>
+
+          <div class="program-grid">
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">01</span>
+                <div>
+                  <p class="program__week">Objetivo 1 · Módulo I</p>
+                  <h3>Fundamentos de la Programación y Lógica con Python</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Qué es programar: resolución de problemas con algoritmos. Lenguajes
+                interpretados vs. compilados, instalación, REPL y scripts .py. Variables
+                (snake_case), tipos int, float, str, bool, type() y casting.
+              </p>
+              <p class="program__product">
+                Operadores aritméticos (+, -, *, /, //, %, **), input(), print() y
+                formateo con f-strings.
+              </p>
+              <div class="skills">
+                <span>Algoritmos</span>
+                <span>Variables</span>
+                <span>REPL</span>
+                <span>f-strings</span>
+              </div>
+            </article>
+
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">02</span>
+                <div>
+                  <p class="program__week">Objetivo 2 · Módulo I</p>
+                  <h3>Control de Flujo y Estructuras de Datos</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Condicionales if, elif, else con operadores de comparación y lógicos.
+                Indentación como regla de oro en Python. Bucles while y for con range(),
+                break y continue.
+              </p>
+              <p class="program__product">
+                Colecciones: listas (índice, slicing, .append(), .pop()), tuplas
+                inmutables y diccionarios clave-valor.
+              </p>
+              <div class="skills">
+                <span>if/else</span>
+                <span>for/while</span>
+                <span>Listas</span>
+                <span>Diccionarios</span>
+              </div>
+            </article>
+
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">03</span>
+                <div>
+                  <p class="program__week">Objetivo 3 · Módulo I</p>
+                  <h3>Modularización, Funciones y Robustez (DRY)</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Funciones con def, parámetros, return vs. print, scope local y global.
+                Parámetros por defecto, *args y **kwargs. Excepciones con try, except,
+                else y finally.
+              </p>
+              <p class="program__product">
+                Lectura y escritura con with open() para .txt y .csv. Módulos estándar
+                (math, random, os) y pip para librerías externas.
+              </p>
+              <div class="skills">
+                <span>Funciones</span>
+                <span>try/except</span>
+                <span>Archivos</span>
+                <span>pip</span>
+              </div>
+            </article>
+
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">04</span>
+                <div>
+                  <p class="program__week">Objetivo 4 · Módulo II</p>
+                  <h3>Cimientos y Creación de Objetos</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Entornos virtuales y gestión de dependencias profesionales. Type hinting
+                para contratos claros en funciones. POO: encapsulamiento de la cámara y
+                el procesamiento.
+              </p>
+              <p class="program__product">
+                Patrón Singleton: una sola instancia de la cámara (recurso de hardware
+                único) en toda la aplicación.
+              </p>
+              <div class="skills">
+                <span>venv</span>
+                <span>Type Hinting</span>
+                <span>POO</span>
+                <span>Singleton</span>
+              </div>
+            </article>
+
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">05</span>
+                <div>
+                  <p class="program__week">Objetivo 5 · Módulo II</p>
+                  <h3>Estructura y Flexibilidad</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Herencia y polimorfismo: clases base para detectores. Excepciones
+                personalizadas (FrameCaptureError). Logging en lugar de print() para
+                trazabilidad de errores.
+              </p>
+              <p class="program__product">
+                Patrón Strategy: cambiar algoritmos de detección (color vs. QR) en tiempo
+                de ejecución sin alterar la lógica principal.
+              </p>
+              <div class="skills">
+                <span>Herencia</span>
+                <span>Logging</span>
+                <span>Excepciones</span>
+                <span>Strategy</span>
+              </div>
+            </article>
+
+            <article class="program">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">06</span>
+                <div>
+                  <p class="program__week">Objetivo 6 · Módulo II</p>
+                  <h3>Rendimiento y Desacoplamiento</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Multithreading: separar lectura de frames del procesamiento para eliminar
+                lag. Decorador @benchmark para medir tiempos de inferencia.
+              </p>
+              <p class="program__product">
+                Patrón Observer: el inventario (base de datos) se notifica automáticamente
+                cada vez que la cámara detecta un objeto.
+              </p>
+              <div class="skills">
+                <span>Multithreading</span>
+                <span>Decoradores</span>
+                <span>Concurrencia</span>
+                <span>Observer</span>
+              </div>
+            </article>
+
+            <article class="program program--wide">
+              <header class="program__top">
+                <span class="program__icon" aria-hidden="true">07</span>
+                <div>
+                  <p class="program__week">Objetivo 7 · Módulo II</p>
+                  <h3>Integración y Calidad de Software</h3>
+                </div>
+              </header>
+              <p class="program__goal">
+                Unit testing con PyTest y mocks (imágenes falsas) para validar la lógica
+                de conteo. Persistencia con SQLite/PostgreSQL usando POO.
+              </p>
+              <p class="program__product">
+                Patrón Factory: fábrica de procesadores para instanciar diferentes
+                pipelines de visión según el tipo de producto en el inventario.
+              </p>
+              <div class="skills">
+                <span>PyTest</span>
+                <span>Mocks</span>
+                <span>SQLite</span>
+                <span>Factory</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="proyectos">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Proyectos prácticos</p>
+            <h2>Lo que construirás durante el curso</h2>
+            <p>
+              Cada proyecto refuerza habilidades concretas y te acerca a escribir código
+              profesional, mantenible y probado.
+            </p>
+          </div>
+          <div class="projects__grid">
+            <article class="project-chip">Calculadora interactiva con input y f-strings</article>
+            <article class="project-chip">Gestor de inventario con listas y diccionarios</article>
+            <article class="project-chip">Lector y escritor de archivos CSV</article>
+            <article class="project-chip">Sistema de detección con POO y Singleton</article>
+            <article class="project-chip">Detectores intercambiables con Strategy</article>
+            <article class="project-chip">Pipeline de visión con Observer y Factory</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="enroll" id="inscripcion">
+        <div class="container enroll__grid">
+          <div class="enroll__copy">
+            <p class="eyebrow">Inscripción</p>
+            <h2>Habla con un asesor de acacode</h2>
+            <p>
+              Completa el formulario y te llevaremos directo a WhatsApp con tu
+              información lista. Un asesor te orientará para inscribirte en el curso de
+              Python.
+            </p>
+            <ul class="enroll__points">
+              <li>7 objetivos en 2 módulos progresivos</li>
+              <li>Edad mínima: 14 años</li>
+              <li>De cero a programador con proyectos reales</li>
+              <li>Respuesta por WhatsApp</li>
+            </ul>
+          </div>
+
+          <form class="form" id="leadForm" novalidate>
+            <fieldset class="form__fieldset">
+              <legend>¿Para quién es el curso?</legend>
+              <label class="radio-card">
+                <input type="radio" name="tipo_inscripcion" value="personal" checked />
+                <span>Es para mí (soy el estudiante)</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="tipo_inscripcion" value="menor" />
+                <span>Es para un menor de edad (soy el representante)</span>
+              </label>
+            </fieldset>
+
+            <div class="form__section">
+              <p class="form__section-title" id="representanteTitle">Tus datos</p>
+              <div class="form__row">
+                <label>
+                  Nombre
+                  <input type="text" name="nombre" autocomplete="given-name" placeholder="María" required />
+                </label>
+                <label>
+                  Apellido
+                  <input type="text" name="apellido" autocomplete="family-name" placeholder="Pérez" required />
+                </label>
+              </div>
+              <label>
+                Cédula
+                <input type="text" name="cedula" inputmode="numeric" placeholder="V-12345678" required />
+              </label>
+              <label>
+                Correo electrónico
+                <input type="email" name="correo" autocomplete="email" placeholder="correo@ejemplo.com" required />
+              </label>
+              <label>
+                Número de teléfono
+                <input type="tel" name="telefono" autocomplete="tel" placeholder="0422-3234253" required />
+              </label>
+            </div>
+
+            <div class="form__section form__section--minor" id="minorSection" hidden>
+              <p class="form__section-title">Datos del menor de edad</p>
+              <div class="form__row">
+                <label>
+                  Nombre del menor
+                  <input type="text" name="menor_nombre" autocomplete="off" placeholder="Juan" />
+                </label>
+                <label>
+                  Apellido del menor
+                  <input type="text" name="menor_apellido" autocomplete="off" placeholder="Pérez" />
+                </label>
+              </div>
+              <label>
+                Edad del menor
+                <input type="number" name="menor_edad" min="14" max="17" placeholder="14" />
+              </label>
+              <label>
+                Cédula o documento del menor (opcional)
+                <input type="text" name="menor_cedula" placeholder="V-12345678" />
+              </label>
+            </div>
+
+            <p class="form__error" id="formError" hidden></p>
+            <button class="btn btn--primary btn--full" type="submit">Contactar al asesor</button>
+            <p class="form__note">Se abrirá WhatsApp con tus datos y el mensaje de interés en el curso.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <img class="footer__logo" src="img/logo-acacode-blanco.png" alt="acacode" />
+          <p>Aprende, Crea y Comparte — habilidades tech para tu futuro.</p>
+          <p class="footer__contact">
+            Av. José Joaquín Veroes, esquina calle 12, San Felipe, Yaracuy<br />
+            <a href="mailto:academyacacode@gmail.com">academyacacode@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="../../index.html">Página principal</a></li>
+            <li><a href="../../acerca-de-nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="../../cursos.html">Cursos</a></li>
+            <li><a href="../../index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <ul class="footer__hours">
+            <li>Lun–Vie 8:00 AM – 12:00 PM</li>
+            <li>Lun–Vie 2:00 PM – 6:00 PM</li>
+            <li>Sábado según programa</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <p>Copyright © 2026 Acacode. Todos los derechos reservados</p>
+        <nav class="footer-bar__links" aria-label="Legal">
+          <a href="#">Políticas de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </nav>
+      </div>
+    </div>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/584223234253?text=Hola%20estoy%20interesado%20en%20su%20curso%20de%20Python"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Escribir por WhatsApp al asesor"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path
+          fill="currentColor"
+          d="M16.01 3C9.39 3 4 8.39 4 15.02c0 2.12.56 4.18 1.62 6L4 29l8.18-1.58A11.97 11.97 0 0 0 16.01 27C22.63 27 28 21.61 28 14.98 28 8.39 22.63 3 16.01 3zm6.98 16.94c-.29.82-1.7 1.5-2.35 1.6-.6.09-1.36.13-2.2-.14-.5-.16-1.15-.38-1.98-.74-3.48-1.5-5.74-5.01-5.91-5.24-.17-.23-1.39-1.85-1.39-3.53 0-1.68.88-2.5 1.19-2.84.31-.34.68-.43.9-.43.23 0 .45 0 .65.01.21.01.49-.08.76.58.29.7.98 2.4 1.07 2.58.09.17.15.38.03.61-.12.23-.18.38-.36.58-.17.2-.36.45-.52.6-.17.17-.35.35-.15.69.2.34.9 1.48 1.93 2.4 1.33 1.18 2.45 1.55 2.79 1.72.34.17.54.14.74-.09.2-.23.85-.99 1.08-1.33.23-.34.45-.28.76-.17.31.11 1.98.93 2.32 1.1.34.17.57.26.65.4.09.14.09.82-.2 1.64z"
+        />
+      </svg>
+    </a>
+
+    <script src="js/main.js?v=1"></script>
+  </body>
+</html>

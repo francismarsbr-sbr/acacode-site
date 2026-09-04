@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>acacode — Academia de Tecnología</title>
+    <meta
+      name="description"
+      content="Academia creada para reducir la brecha digital. Formación práctica para todas las edades. Aprende, Crea y Comparte."
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="acacode">
+          <img src="img/logo-acacode.png" alt="acacode" />
+        </a>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="index.html" class="is-active">Home</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto" class="nav__cta">Contacto</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / CARRUSEL (estilo acacode.com) -->
+      <section class="slider-area" id="inicio" aria-label="Presentación">
+        <div class="slider__track" id="heroSlides">
+          <article
+            class="slider__item is-active"
+            style="background-image: url('img/banner_acacode.svg')"
+          >
+            <div class="container">
+              <div class="slider__content">
+                <span class="slider__sub">Una academia creada para reducir la brecha digital, con educación práctica para todas las edades.</span>
+                <h2 class="slider__title">
+                  Domina el futuro digital.
+                  <span>Academia de Tecnología:</span>
+                  Formación Digital para Todas las Edades. Aprende, Crea y Comparte.
+                </h2>
+                <ul class="slider__list">
+                  <li>Domina las tecnologías del futuro y potencia tus habilidades.</li>
+                  <li>Aprendizaje práctico desde la infancia hasta la edad adulta para crear, trabajar y vivir con autonomía.</li>
+                </ul>
+                <a class="btn btn--primary" href="cursos.html">Explorar Cursos</a>
+              </div>
+            </div>
+            <img class="slider__shape slider__shape--bottom" src="img/mentors_shape02.png" alt="" aria-hidden="true" />
+          </article>
+
+          <article
+            class="slider__item"
+            style="background-image: url('img/banner_acacode_minigenio.svg')"
+          >
+            <div class="container">
+              <div class="slider__content">
+                <span class="slider__sub">"Mini Genios Digitales", Nuestro semillero del futuro!</span>
+                <h2 class="slider__title">
+                  Transformamos el tiempo frente a la pantalla
+                  <span>en una ventaja competitiva.</span>
+                  Tus hijos desarrollan el pensamiento crítico.
+                </h2>
+                <ul class="slider__list">
+                  <li>Prepara a tus hijos para las profesiones que aún no existen.</li>
+                  <li>Programación para niños, el futuro!</li>
+                </ul>
+                <a class="btn btn--primary" href="cursos.html">Ver Programa para Niños</a>
+              </div>
+            </div>
+            <img class="slider__shape slider__shape--bottom" src="img/course_shape02.png" alt="" aria-hidden="true" />
+          </article>
+
+          <article
+            class="slider__item"
+            style="background-image: url('img/banner_acacode_actualizacion_profesional-1.png')"
+          >
+            <div class="container">
+              <div class="slider__content">
+                <span class="slider__sub">Herramientas diseñadas para elevar tu productividad y tus ingresos.</span>
+                <h2 class="slider__title">
+                  No permitas que la tecnología te deje atrás.
+                  <span>Actualización radical.</span>
+                  De la teoría a la monetización.
+                </h2>
+                <ul class="slider__list">
+                  <li>Domina la IA, el análisis de datos y el desarrollo web para monetizar tus habilidades.</li>
+                  <li>Habilidades blandas y duras que te hacen resaltar; usa la IA para elevar tu nivel.</li>
+                </ul>
+                <a class="btn btn--primary" href="cursos/marketing-digital/index.html">Potenciar mi Carrera</a>
+              </div>
+            </div>
+            <img class="slider__shape slider__shape--top" src="img/blog_shape03.png" alt="" aria-hidden="true" />
+          </article>
+
+          <article
+            class="slider__item"
+            style="background-image: url('img/banner_acacode_inclusion_digital-1.png')"
+          >
+            <div class="container">
+              <div class="slider__content">
+                <span class="slider__sub">Aprende desde cero a realizar trámites, usar herramientas de comunicación y navegar con total seguridad.</span>
+                <h2 class="slider__title">
+                  Recupera tu independencia en el mundo digital.
+                  <span>La tecnología no tiene por qué ser una barrera.</span>
+                </h2>
+                <ul class="slider__list">
+                  <li>Que la tecnología no te limite. Recupera tu autonomía en el mundo moderno.</li>
+                  <li>Avanza hacia el futuro con cursos sencillos para manejar herramientas digitales con seguridad y confianza.</li>
+                </ul>
+                <a class="btn btn--primary" href="cursos/alfabetizacion-tecnologica/index.html">Empezar desde Cero</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="slider__nav" aria-label="Controles del carrusel">
+          <button type="button" class="slider__arrow" id="heroPrev" aria-label="Anterior">‹</button>
+          <div class="slider__dots">
+            <button type="button" class="slider__dot is-active" data-go="0" aria-label="Slide 1"></button>
+            <button type="button" class="slider__dot" data-go="1" aria-label="Slide 2"></button>
+            <button type="button" class="slider__dot" data-go="2" aria-label="Slide 3"></button>
+            <button type="button" class="slider__dot" data-go="3" aria-label="Slide 4"></button>
+          </div>
+          <button type="button" class="slider__arrow" id="heroNext" aria-label="Siguiente">›</button>
+        </div>
+      </section>
+
+      <!-- AUDIENCIAS -->
+      <section class="audiences" id="audiencias">
+        <div class="container audiences__grid">
+          <article class="audience-card reveal">
+            <span class="audience-card__tag">Niños</span>
+            <h2>Mini Genios Digitales</h2>
+            <p>Scratch, animación y STEM para preparar a tus hijos para profesiones que aún no existen.</p>
+            <a href="cursos/minigenio-scratch/index.html">Scratch y Animación →</a>
+            <a href="cursos/minigenio-stem/index.html" style="display:block;margin-top:.4rem">Habilidades STEM →</a>
+          </article>
+          <article class="audience-card reveal">
+            <span class="audience-card__tag">Profesionales</span>
+            <h2>Actualización radical</h2>
+            <p>IA, marketing, datos y desarrollo web. De la teoría a la monetización.</p>
+            <a href="cursos/marketing-digital/index.html">Potenciar carrera →</a>
+          </article>
+          <article class="audience-card reveal">
+            <span class="audience-card__tag">Adultos</span>
+            <h2>Inclusión digital</h2>
+            <p>Trámites, comunicación y navegación segura. Autonomía en el mundo moderno.</p>
+            <a href="cursos/alfabetizacion-tecnologica/index.html">Empezar desde cero →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CURSOS -->
+      <section class="courses" id="cursos">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Nuestros cursos activos</p>
+              <h2 class="section-title">Nuestros <span>programas</span></h2>
+            </div>
+            <a class="btn btn--outline" href="cursos.html">Ver todos los cursos</a>
+          </div>
+
+          <div class="courses__grid" id="coursesGrid">
+            <!-- rellenado por js/main.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats" id="logros">
+        <div class="container stats__grid">
+          <div class="stat reveal">
+            <strong data-count="1200" data-suffix="+">0</strong>
+            <span>Estudiantes atendidos</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="11" data-suffix="">0</strong>
+            <span>Cursos locales activos</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="100" data-suffix="%">0</strong>
+            <span>Metodología práctica</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="4" data-suffix="+">0</strong>
+            <span>Áreas tech</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FILOSOFÍA -->
+      <section class="philosophy" id="filosofia">
+        <div class="container philosophy__grid">
+          <div class="philosophy__copy reveal">
+            <p class="eyebrow">¿Por qué elegirnos?</p>
+            <h2 class="section-title">No solo enseñamos herramientas. <span>Cerramos la brecha digital.</span></h2>
+            <p>
+              Nuestro lema <strong>“Aprende, Crea y Comparte”</strong> prioriza la
+              productividad real sobre la teoría vacía.
+            </p>
+            <ul class="check-list">
+              <li>Metodología 100% práctica</li>
+              <li>Aprendizaje basado en proyectos</li>
+              <li>Acompañamiento humano y paciente</li>
+              <li>Actualización constante con las últimas tendencias</li>
+            </ul>
+            <a class="btn btn--primary" href="acerca-de-nosotros.html">Conoce más sobre nosotros</a>
+            <a class="btn btn--outline" href="cursos.html" style="margin-left:.5rem">Conviértete en estudiante</a>
+          </div>
+          <div class="philosophy__panel reveal">
+            <blockquote>
+              “Una academia creada para reducir la brecha digital, con educación
+              práctica para todas las edades.”
+            </blockquote>
+            <div class="philosophy__meta">
+              <img src="img/logo-acacode-blanco.png" alt="" />
+              <div>
+                <strong>acacode</strong>
+                <span>San Felipe, Yaracuy · Venezuela</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section class="testimonials" id="testimonios">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <div>
+              <p class="eyebrow">Testimonios acacode</p>
+              <h2 class="section-title">Lo que nuestros estudiantes <span>piensan</span></h2>
+            </div>
+          </div>
+          <div class="testimonials__track" id="testimonialTrack">
+            <article class="testimonial is-active">
+              <img src="img/testi01.png" alt="" />
+              <p>“Mi hijo pasó de jugar videojuegos a crear sus propios niveles. Es increíble verlo pensar así.”</p>
+              <strong>María G. López</strong>
+              <span>Madre Mini Genio</span>
+            </article>
+            <article class="testimonial">
+              <img src="img/testi02.png" alt="" />
+              <p>“Pensé que la IA era ciencia ficción, ahora la uso para cerrar ventas en mi negocio.”</p>
+              <strong>Juan Gutierrez</strong>
+              <span>Emprendedor</span>
+            </article>
+            <article class="testimonial">
+              <img src="img/testi03.png" alt="" />
+              <p>“Por fin entiendo cómo usar Google sin depender de mis nietos.”</p>
+              <strong>Luis Pérez</strong>
+              <span>Adulto mayor</span>
+            </article>
+          </div>
+          <div class="testimonials__controls">
+            <button type="button" id="testiPrev" aria-label="Anterior">←</button>
+            <button type="button" id="testiNext" aria-label="Siguiente">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="contact" id="contacto">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <div>
+              <p class="eyebrow">Contacto</p>
+              <h2 class="section-title">Habla con <span>acacode</span></h2>
+            </div>
+          </div>
+          <div class="contact__grid">
+            <article class="contact-card reveal">
+              <h3>WhatsApp</h3>
+              <p>Escríbenos y un asesor te orienta para inscribirte.</p>
+              <a
+                class="btn btn--primary"
+                href="https://wa.me/584223234253?text=Hola%20estoy%20interesado%20en%20los%20cursos%20de%20acacode"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Abrir WhatsApp</a>
+            </article>
+            <article class="contact-card reveal">
+              <h3>Correo</h3>
+              <p>academyacacode@gmail.com</p>
+              <a class="btn btn--outline" href="mailto:academyacacode@gmail.com">Enviar email</a>
+            </article>
+            <article class="contact-card reveal">
+              <h3>Sede</h3>
+              <p>
+                Av. José Joaquín Veroes, esquina calle 12,<br />
+                San Felipe, Yaracuy, Venezuela
+              </p>
+              <p class="contact-card__hours">
+                Lun–Vie 8:00 AM – 12:00 PM<br />
+                Lun–Vie 2:00 PM – 6:00 PM
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div>
+            <h2>Ven y conoce todos nuestros cursos</h2>
+            <p>Únete a nuestra comunidad. Aprende, crea y comparte habilidades tech.</p>
+          </div>
+          <a
+            class="btn btn--teal"
+            href="https://wa.me/584223234253?text=Hola%20quiero%20inscribirme%20en%20acacode"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Únete ahora</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <img class="footer__logo" src="img/logo-acacode-blanco.png" alt="acacode" />
+          <p>Aprende, Crea y Comparte — habilidades tech para tu futuro.</p>
+          <p class="footer__contact">
+            Av. José Joaquín Veroes, esquina calle 12, San Felipe, Yaracuy<br />
+            <a href="mailto:academyacacode@gmail.com">academyacacode@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="acerca-de-nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cursos</h3>
+          <ul>
+            <li><a href="cursos/minigenio-scratch/index.html">Scratch y Animación</a></li>
+            <li><a href="cursos/minigenio-stem/index.html">MiniGenio STEM</a></li>
+            <li><a href="cursos/python/index.html">Python</a></li>
+            <li><a href="cursos/marketing-digital/index.html">Marketing Digital</a></li>
+            <li><a href="cursos/ia-generativa/index.html">IA Generativa</a></li>
+            <li><a href="cursos.html">Ver todos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <ul class="footer__hours">
+            <li>Lun–Vie 8:00 AM – 12:00 PM</li>
+            <li>Lun–Vie 2:00 PM – 6:00 PM</li>
+            <li>Sábado según programa</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <p>Copyright © 2026 Acacode. Todos los derechos reservados</p>
+        <nav class="footer-bar__links" aria-label="Legal">
+          <a href="#">Políticas de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </nav>
+      </div>
+    </div>
+
+    <script src="js/courses-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos | acacode</title>
+    <meta name="description" content="Catálogo local de cursos acacode. Abre cada landing desde aquí." />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="acacode">
+          <img src="img/logo-acacode.png" alt="acacode" />
+        </a>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="index.html">Home</a>
+          <a href="cursos.html" class="is-active">Cursos</a>
+          <a href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+          <a href="index.html#testimonios">Testimonios</a>
+          <a href="index.html#contacto" class="nav__cta">Contacto</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Catálogo</p>
+          <h1>Nuestros programas</h1>
+
+        </div>
+      </section>
+
+      <section class="courses" style="padding-top: 0">
+        <div class="container">
+          <div class="filters" id="courseFilters" aria-label="Filtrar por categoría"></div>
+          <div class="courses__grid" id="allCoursesGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <img class="footer__logo" src="img/logo-acacode-blanco.png" alt="acacode" />
+          <p>Aprende, Crea y Comparte.</p>
+        </div>
+        <div>
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cursos</h3>
+          <ul>
+            <li><a href="cursos/minigenio-scratch/index.html">Scratch y Animación</a></li>
+            <li><a href="cursos/minigenio-stem/index.html">MiniGenio STEM</a></li>
+            <li><a href="cursos/python/index.html">Python</a></li>
+            <li><a href="cursos/ia-generativa/index.html">IA Generativa</a></li>
+            <li><a href="cursos.html">Ver todos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <ul class="footer__hours">
+            <li>Lun–Vie 8:00 AM – 12:00 PM</li>
+            <li>Lun–Vie 2:00 PM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <p>Copyright © 2026 Acacode. Todos los derechos reservados</p>
+        <nav class="footer-bar__links" aria-label="Legal">
+          <a href="#">Políticas de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </nav>
+      </div>
+    </div>
+
+    <script src="js/courses-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
