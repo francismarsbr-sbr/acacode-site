@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursos | acacode</title>
-    <meta name="description" content="Catálogo local de cursos acacode. Abre cada landing desde aquí." />
+    <title>Guías y Recursos | acacode</title>
+    <meta
+      name="description"
+      content="Descarga las guías PDF de los cursos de acacode. Recursos prácticos para aprender, crear y compartir."
+    />
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +27,8 @@
         </a>
         <nav class="nav" id="nav" aria-label="Principal">
           <a href="index.html">Home</a>
-          <a href="cursos.html" class="is-active">Cursos</a>
-          <a href="guias.html">Guías</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="guias.html" class="is-active">Guías</a>
           <a href="videos.html">Videos</a>
           <a href="acerca-de-nosotros.html">Acerca de Nosotros</a>
           <a href="index.html#testimonios">Testimonios</a>
@@ -38,18 +41,49 @@
     </header>
 
     <main>
-      <section class="page-hero">
+      <section class="page-hero page-hero--wide">
         <div class="container">
-          <p class="eyebrow">Catálogo</p>
-          <h1>Nuestros programas</h1>
-
+          <p class="eyebrow">Recursos descargables</p>
+          <h1>Guías PDF de nuestros cursos</h1>
+          <p>
+            Material de apoyo para practicar fuera del aula. Busca por nombre o
+            filtra por categoría y descarga la guía que necesites.
+          </p>
         </div>
       </section>
 
-      <section class="courses" style="padding-top: 0">
+      <section class="guides" id="guias">
         <div class="container">
-          <div class="filters" id="courseFilters" aria-label="Filtrar por categoría"></div>
-          <div class="courses__grid" id="allCoursesGrid"></div>
+          <div class="guides__toolbar">
+            <label class="guides__search">
+              <span class="visually-hidden">Buscar guías</span>
+              <input
+                type="search"
+                id="guidesSearch"
+                placeholder="Buscar por título, curso o descripción…"
+                autocomplete="off"
+              />
+            </label>
+            <div class="filters" id="guidesFilters" aria-label="Filtrar por categoría"></div>
+          </div>
+
+          <div class="guides__grid" id="guidesGrid">
+            <!-- rellenado por js/main.js -->
+          </div>
+
+          <p class="guides__empty" id="guidesEmpty" hidden>
+            No encontramos guías con ese criterio. Prueba otra búsqueda o categoría.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div>
+            <h2>¿Quieres acompañamiento en vivo?</h2>
+            <p>Explora el catálogo y elige el programa que se adapte a ti.</p>
+          </div>
+          <a class="btn btn--teal" href="cursos.html">Ver cursos</a>
         </div>
       </section>
     </main>
@@ -58,12 +92,17 @@
       <div class="container footer__grid">
         <div>
           <img class="footer__logo" src="img/logo-acacode-blanco.png?v=3" alt="acacode" />
-          <p>Aprende, Crea y Comparte.</p>
+          <p>Aprende, Crea y Comparte — habilidades tech para tu futuro.</p>
+          <p class="footer__contact">
+            Av. José Joaquín Veroes, esquina calle 12, San Felipe, Yaracuy<br />
+            <a href="mailto:academyacacode@gmail.com">academyacacode@gmail.com</a>
+          </p>
         </div>
         <div>
           <h3>Recursos</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="acerca-de-nosotros.html">Acerca de nosotros</a></li>
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="guias.html">Guías</a></li>
             <li><a href="videos.html">Videos</a></li>
@@ -85,6 +124,7 @@
           <ul class="footer__hours">
             <li>Lun–Vie 8:00 AM – 12:00 PM</li>
             <li>Lun–Vie 2:00 PM – 6:00 PM</li>
+            <li>Sábado según programa</li>
           </ul>
         </div>
       </div>
@@ -100,7 +140,7 @@
       </div>
     </div>
 
-    <script src="js/courses-data.js"></script>
+    <script src="js/guias-data.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
