@@ -18,16 +18,25 @@
   }
 
   /* Render course cards */
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   function cardHTML(course) {
     return `
-      <article class="course-card reveal" data-category="${course.category}">
-        <a class="course-card__thumb" href="${course.href}">
-          <img src="${course.image}" alt="${course.title}" loading="lazy" />
+      <article class="course-card reveal" data-category="${escapeHtml(course.category)}">
+        <a class="course-card__thumb" href="${escapeHtml(course.href)}">
+          <img src="${escapeHtml(course.image)}" alt="${escapeHtml(course.title)}" loading="lazy" />
         </a>
         <div class="course-card__body">
-          <span class="course-card__cat">${course.category}</span>
-          <h3><a href="${course.href}">${course.title}</a></h3>
-          <p>${course.blurb}</p>
+          <span class="course-card__cat">${escapeHtml(course.category)}</span>
+          <h3><a href="${escapeHtml(course.href)}">${escapeHtml(course.title)}</a></h3>
+          <p>${escapeHtml(course.blurb)}</p>
           <div class="course-card__meta">
             <span>${course.hours}</span>
           </div>
@@ -55,7 +64,7 @@
     filters.innerHTML = cats
       .map(
         (cat, i) =>
-          `<button type="button" class="filter-btn${i === 0 ? " is-active" : ""}" data-filter="${cat}">${cat}</button>`
+          `<button type="button" class="filter-btn${i === 0 ? " is-active" : ""}" data-filter="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`
       )
       .join("");
 
@@ -81,21 +90,21 @@
   let activeGuideCategory = "Todos";
 
   function guideCardHTML(guide) {
-    const fileName = guide.file.split("/").pop();
+    const searchBlob = `${guide.title} ${guide.category} ${guide.description}`;
     return `
-      <article class="guide-card reveal" data-category="${guide.category}" data-search="${guide.title} ${guide.category} ${guide.description}">
-        <span class="guide-card__badge">${guide.category}</span>
-        <h3>${guide.title}</h3>
-        <p>${guide.description}</p>
-        <span class="guide-card__meta">PDF · ${guide.size}</span>
-        <a class="btn btn--primary" href="${guide.file}" download="${fileName}">Descargar Guía</a>
+      <article class="guide-card reveal" data-category="${escapeHtml(guide.category)}" data-search="${escapeHtml(searchBlob)}">
+        <span class="guide-card__badge">${escapeHtml(guide.category)}</span>
+        <h3>${escapeHtml(guide.title)}</h3>
+        <p>${escapeHtml(guide.description)}</p>
+        <span class="guide-card__meta">PDF · ${escapeHtml(guide.size)}</span>
+        <a class="btn btn--primary" href="${escapeHtml(guide.file)}" target="_blank" rel="noopener noreferrer">Abrir guía</a>
       </article>
     `;
   }
 
   function applyGuideFilters() {
     if (!guidesGrid) return;
-    const query = (guidesSearch?.value || "").trim().toLowerCase();
+    const query = (guidesSearch?.value || "").trim().toLowerCase().slice(0, 80);
     let visible = 0;
     guidesGrid.querySelectorAll(".guide-card").forEach((card) => {
       const catOk =
@@ -117,7 +126,7 @@
       guidesFilters.innerHTML = cats
         .map(
           (cat, i) =>
-            `<button type="button" class="filter-btn${i === 0 ? " is-active" : ""}" data-filter="${cat}">${cat}</button>`
+            `<button type="button" class="filter-btn${i === 0 ? " is-active" : ""}" data-filter="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`
         )
         .join("");
 
@@ -179,7 +188,7 @@
 
   function applyVideoFilters() {
     if (!videosGrid) return;
-    const query = (videosSearch?.value || "").trim().toLowerCase();
+    const query = (videosSearch?.value || "").trim().toLowerCase().slice(0, 80);
     let visible = 0;
     videosGrid.querySelectorAll(".video-card").forEach((card) => {
       const catOk =

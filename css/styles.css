@@ -1363,3 +1363,386 @@ button {
 .audience-card .audience-card__tag {
   margin-bottom: 0.85rem;
 }
+
+/* acacode Empresas — más sobrio, misma marca */
+.page-empresas {
+  background: #f4f5f8;
+}
+
+.page-empresas .page-bg {
+  background:
+    linear-gradient(180deg, rgba(159, 64, 253, 0.06), transparent 220px),
+    #f4f5f8;
+}
+
+.page-empresas .btn {
+  border-radius: 10px;
+}
+
+.page-empresas .section-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.biz-hero {
+  padding: 2.6rem 0 0;
+}
+
+.biz-hero__grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 0;
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid #e4e5ec;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(19, 19, 19, 0.04);
+}
+
+.biz-hero__grid > div:first-child {
+  padding: 2.2rem 2rem 1.8rem;
+}
+
+.biz-hero h1 {
+  font-family: Fredoka, sans-serif;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 0.35rem 0 0.85rem;
+  max-width: 18ch;
+}
+
+.biz-hero p {
+  color: var(--muted);
+  max-width: 48ch;
+  margin: 0;
+}
+
+.biz-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
+}
+
+.biz-hero__notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 1.15rem 0 0;
+  margin: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.biz-hero__notes li {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--teal);
+}
+
+.biz-hero__card {
+  background: #16141c;
+  color: #fff;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 4px solid var(--purple);
+}
+
+.biz-hero__card h2 {
+  font-family: Fredoka, sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.biz-hero__card p {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+}
+
+.biz-hero__kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7dffe0;
+}
+
+.biz-hero__card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.biz-pains,
+.biz-benefits,
+.biz-modes,
+.biz-why,
+.biz-faq,
+.page-empresas .courses {
+  padding: 3.4rem 0;
+}
+
+.page-empresas .biz-pains,
+.page-empresas .biz-modes,
+.page-empresas .biz-faq {
+  background: #fff;
+  border-top: 1px solid #e8e9ef;
+  border-bottom: 1px solid #e8e9ef;
+}
+
+.biz-lead {
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0.6rem 0 0;
+}
+
+.biz-pains__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #e4e5ec;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.biz-pains__list li {
+  padding: 1.05rem 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e4e5ec;
+  border-right: 1px solid #e4e5ec;
+}
+
+.biz-pains__list li:nth-child(2n) {
+  border-right: 0;
+}
+
+.biz-pains__list li:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.biz-pains__close {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.biz-benefits__grid,
+.biz-modes__grid,
+.biz-programs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.biz-card,
+.biz-mode,
+.biz-program {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.2rem 1.3rem;
+  border: 1px solid #e4e5ec;
+  box-shadow: none;
+}
+
+.biz-card span,
+.biz-program span {
+  display: inline-block;
+  color: var(--teal-deep);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.biz-card h3,
+.biz-mode h3,
+.biz-program h3 {
+  font-family: Fredoka, sans-serif;
+  margin: 0.45rem 0 0.4rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.biz-card p,
+.biz-mode p,
+.biz-program p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.biz-card {
+  border-top: 3px solid var(--purple);
+}
+
+.biz-mode {
+  background: #fff;
+}
+
+.biz-program {
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.biz-program:hover {
+  border-color: var(--purple);
+  background: #fcfbff;
+}
+
+.biz-program p {
+  flex: 1;
+}
+
+.biz-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+
+.biz-pills li {
+  background: #fff;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.84rem;
+  border-radius: 8px;
+  border: 1px solid #e4e5ec;
+  padding: 0.4rem 0.75rem;
+}
+
+.biz-faq__list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid #e4e5ec;
+}
+
+.biz-faq details {
+  background: transparent;
+  border-radius: 0;
+  padding: 1rem 0;
+  box-shadow: none;
+  border-bottom: 1px solid #e4e5ec;
+}
+
+.biz-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.biz-faq details p {
+  margin: 0.65rem 0 0.15rem;
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+.page-empresas .contact {
+  background: transparent;
+}
+
+.page-empresas .contact-card {
+  border-radius: 12px;
+  border: 1px solid #e4e5ec;
+  box-shadow: none;
+}
+
+.page-empresas .cta-band {
+  border-radius: 0;
+}
+
+.biz-teaser {
+  padding: 0 0 3rem;
+}
+
+.biz-teaser__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: #16141c;
+  color: #fff;
+  border-radius: 16px;
+  padding: 1.6rem 1.5rem;
+  border-top: 4px solid var(--purple);
+  box-shadow: none;
+}
+
+.biz-teaser .eyebrow {
+  color: #7dffe0;
+}
+
+.biz-teaser h2 {
+  font-family: Fredoka, sans-serif;
+  margin: 0.2rem 0 0.45rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.biz-teaser p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.biz-teaser__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 960px) {
+  .biz-hero__grid,
+  .biz-benefits__grid,
+  .biz-modes__grid,
+  .biz-programs,
+  .biz-teaser__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .biz-hero__grid,
+  .biz-teaser__inner,
+  .biz-hero__notes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .biz-benefits__grid,
+  .biz-modes__grid,
+  .biz-programs,
+  .biz-pains__list {
+    grid-template-columns: 1fr;
+  }
+
+  .biz-pains__list li,
+  .biz-pains__list li:nth-child(2n),
+  .biz-pains__list li:nth-last-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid #e4e5ec;
+  }
+
+  .biz-pains__list li:last-child {
+    border-bottom: 0;
+  }
+
+  .biz-hero__grid > div:first-child {
+    padding: 1.4rem 1.15rem;
+  }
+
+  .biz-teaser__actions {
+    justify-content: flex-start;
+  }
+}
