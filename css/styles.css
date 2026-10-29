@@ -1492,6 +1492,7 @@ button {
 
 .page-empresas .biz-pains,
 .page-empresas .biz-modes,
+.page-empresas .biz-sessions,
 .page-empresas .biz-faq {
   background: #fff;
   border-top: 1px solid #e8e9ef;
@@ -1744,5 +1745,71 @@ button {
 
   .biz-teaser__actions {
     justify-content: flex-start;
+  }
+}
+
+.biz-sessions {
+  padding: 3.4rem 0;
+}
+
+.biz-sessions__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.biz-session {
+  background: #fff;
+  border: 1px solid #e4e5ec;
+  border-radius: 12px;
+  padding: 1.25rem 1.2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.biz-session header span,
+.biz-session__deliverable {
+  display: inline-block;
+  color: var(--teal-deep);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.biz-session h3 {
+  font-family: Fredoka, sans-serif;
+  margin: 0.35rem 0 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.biz-session p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.biz-session ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.biz-session__deliverable {
+  margin-top: auto;
+  padding-top: 0.7rem;
+  border-top: 1px solid #e4e5ec;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .biz-sessions__grid {
+    grid-template-columns: 1fr;
   }
 }
